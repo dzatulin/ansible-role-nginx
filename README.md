@@ -9,7 +9,8 @@ ansible-role-php
 ```
 - hosts: "{{ var }}"
   roles:
-    - { role: ansible-role-nginx }
+    - ansible-role-nginx 
+    - ansible-role-php 
   vars:
     nginx_vhosts:
       - listen: "80"
